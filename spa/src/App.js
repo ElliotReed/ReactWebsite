@@ -17,11 +17,11 @@ class App extends Component {
             <div className="row">
               <div className="leftcolumn">
                 <div className="card">
-                  <div classNameName="title">
+                  <div className="title">
                     <h1>{item.title.rendered}</h1>
                   </div>
                   <div
-                    classNameName="content"
+                    className="content"
                     dangerouslySetInnerHTML={{ __html: item.content.rendered }}
                   />
                 </div>
@@ -34,7 +34,8 @@ class App extends Component {
   }
 
   componentDidMount() {
-    return fetch(`https://demo.wp-api.org/wp-json/wp/v2/posts`)
+    var request = new Request("https://demo.wp-api.org/wp-json/wp/v2/posts");
+    return fetch(request)
       .then(response => response.json())
       .then(responseJson => {
         this.setState({
