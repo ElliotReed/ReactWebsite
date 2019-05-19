@@ -34,7 +34,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    return fetch(`https://bastiaanjacobs.nl/wp-json/wp/v2/posts/`)
+    return fetch(`https://demo.wp-api.org/wp-json/wp/v2/posts`)
       .then(response => response.json())
       .then(responseJson => {
         this.setState({
