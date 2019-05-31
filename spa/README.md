@@ -1,6 +1,6 @@
-![alt text](https://travis-ci.org/bastiaanjacobs/ReactWebsite.svg?branch=master)
+# This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Build Status](https://travis-ci.org/bastiaanjacobs/ReactWebsite.svg?branch=master)](https://travis-ci.org/bastiaanjacobs/ReactWebsite)
 
 ## Available Scripts
 
